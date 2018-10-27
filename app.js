@@ -1,6 +1,6 @@
 
 const add = (a, b) => {
-    return a + b + 20;
+    return a + b + 2;
 } 
 
 module.exports = add;
