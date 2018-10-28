@@ -18,14 +18,12 @@ jobs:
 
     steps:
        
-
-      - store_artifacts:
-          path: ~/test-results 
-
-      - store_test_results:
-          path: ~/test-results/jest
+      - run: mkdir ~/test-results
       
-      - run: mkdir ~/test-results/jest  
+      - store_test_results:
+          path: ~/test-results
+      
+      
 
       - checkout
 
