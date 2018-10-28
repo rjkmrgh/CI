@@ -17,13 +17,15 @@ jobs:
     # working_directory: ~/repo
 
     steps:
-       - run: mkdir ~/test-results/jest
+       
 
       - store_artifacts:
           path: ~/test-results 
 
       - store_test_results:
           path: ~/test-results/jest
+      
+      - run: mkdir ~/test-results/jest  
 
       - checkout
 
