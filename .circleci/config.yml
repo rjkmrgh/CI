@@ -17,6 +17,13 @@ jobs:
     # working_directory: ~/repo
 
     steps:
+
+      - store_artifacts:
+          path: /test-results
+          destination: prefix
+      - store_test_results:
+          path: test-results
+          
       - checkout
 
       # Download and cache dependencies
